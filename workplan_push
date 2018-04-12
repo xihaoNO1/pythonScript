@@ -1,0 +1,11 @@
+#!/bin/bash
+CMD_PATH=`dirname $0`
+DIR=${CMD_PATH}"/workplan"
+cd $DIR
+git pull
+git add --all
+git pull
+git commit -m "添加工作规划"
+git push 
+echo '提交成功'
+exit 0
